@@ -57,6 +57,15 @@ function rotary_projects_membership_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: access private fields.
+  $permissions['access private fields'] = array(
+    'name' => 'access private fields',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: access rules debug.
   $permissions['access rules debug'] = array(
     'name' => 'access rules debug',
@@ -136,6 +145,15 @@ function rotary_projects_membership_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'field_collection',
+  );
+
+  // Exported permission: administer field permissions.
+  $permissions['administer field permissions'] = array(
+    'name' => 'administer field permissions',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'field_permissions',
   );
 
   // Exported permission: administer fieldgroups.
@@ -336,6 +354,13 @@ function rotary_projects_membership_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: create field_chapter.
+  $permissions['create field_chapter'] = array(
+    'name' => 'create field_chapter',
+    'roles' => array(),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: create location content.
   $permissions['create location content'] = array(
     'name' => 'create location content',
@@ -397,6 +422,20 @@ function rotary_projects_membership_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: edit field_chapter.
+  $permissions['edit field_chapter'] = array(
+    'name' => 'edit field_chapter',
+    'roles' => array(),
+    'module' => 'field_permissions',
+  );
+
+  // Exported permission: edit own field_chapter.
+  $permissions['edit own field_chapter'] = array(
+    'name' => 'edit own field_chapter',
+    'roles' => array(),
+    'module' => 'field_permissions',
   );
 
   // Exported permission: edit own location content.
@@ -543,6 +582,28 @@ function rotary_projects_membership_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'filter',
+  );
+
+  // Exported permission: view field_chapter.
+  $permissions['view field_chapter'] = array(
+    'name' => 'view field_chapter',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
+    ),
+    'module' => 'field_permissions',
+  );
+
+  // Exported permission: view own field_chapter.
+  $permissions['view own field_chapter'] = array(
+    'name' => 'view own field_chapter',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
+    ),
+    'module' => 'field_permissions',
   );
 
   // Exported permission: view own unpublished content.

@@ -249,17 +249,21 @@ function rotary_projects_membership_content_defaults() {
 		You will need to change your Site Name, Slogan and email address. This information is displayed in the &quot;heading&quot; of the site and must be accurate.<br />
 		&nbsp;</li>
 	<li>
-		Nodes (content) : click &quot;Content&quot; to display a list of nodes that need to be updated.
+		Nodes (content) : click &quot;Content&quot; to display a list of nodes that need to be updated or added. For Rotary Clubs, there should be just one Chapter. There might be many addresses - one for your regular meeting location, one for your mailing address, one or more for alternative meeting locations, and one or more for project locations.
 		<ul>
 			<li>
-				Mailing Address</li>
+				Mailing Address(es)</li>
 			<li>
-				Meeting Location</li>
+				Meeting Location(s)</li>
 			<li>
-				Chapter<br />
+				Chapter(s)<br />
 				&nbsp;</li>
 		</ul>
 	</li>
+	<li>
+		&quot;Cron&quot; -- click &quot;Configuration &gt;&gt; System &gt;&gt; Club Membership Interface&quot;<br />
+		You should review the information on this page.&nbsp;<br />
+		&nbsp;</li>
 	<li>
 		Add your club members: click &quot;People &gt;&gt; Add user&quot;.&nbsp;<br />
 		&nbsp;</li>
@@ -294,15 +298,19 @@ The "Administrative Menu" is located at the top of your screen. Click on the app
 		You will need to change your Site Name, Slogan and email address. This information is displayed in the "heading" of the site and must be accurate.<br />
 		 </li>
 <li>
-		Nodes (content) : click "Content" to display a list of nodes that need to be updated.
+		Nodes (content) : click "Content" to display a list of nodes that need to be updated or added. For Rotary Clubs, there should be just one Chapter. There might be many addresses - one for your regular meeting location, one for your mailing address, one or more for alternative meeting locations, and one or more for project locations.
 <ul><li>
-				Mailing Address</li>
+				Mailing Address(es)</li>
 <li>
-				Meeting Location</li>
+				Meeting Location(s)</li>
 <li>
-				Chapter<br />
+				Chapter(s)<br />
 				 </li>
 </ul></li>
+<li>
+		"Cron" -- click "Configuration &gt;&gt; System &gt;&gt; Club Membership Interface"<br />
+		You should review the information on this page. <br />
+		 </li>
 <li>
 		Add your club members: click "People &gt;&gt; Add user". <br />
 		 </li>

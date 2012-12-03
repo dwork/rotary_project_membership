@@ -2172,6 +2172,9 @@ function rotary_projects_membership_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_chapter',
+      'field_permissions' => array(
+        'type' => '2',
+      ),
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -2240,7 +2243,7 @@ function rotary_projects_membership_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '0',
+        'weight' => 0,
       ),
     ),
   );
