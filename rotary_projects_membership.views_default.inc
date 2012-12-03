@@ -1703,7 +1703,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: User: Member Status (field_status) */
+  /* Filter criterion: Field: Member Status (field_status) */
   $handler->display->display_options['filters']['field_status_tid']['id'] = 'field_status_tid';
   $handler->display->display_options['filters']['field_status_tid']['table'] = 'field_data_field_status';
   $handler->display->display_options['filters']['field_status_tid']['field'] = 'field_status_tid';

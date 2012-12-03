@@ -104,7 +104,6 @@ features[field_group][] = group_demographic|user|user|form
 features[field_group][] = group_employer|user|user|form
 features[field_group][] = group_homeaddress|profile2|main|form
 features[field_group][] = group_membername|user|user|form
-features[field_group][] = group_participation|user|user|form
 features[field_group][] = group_phonenumbers|profile2|main|form
 features[field_group][] = group_primary|user|user|form
 features[field_group][] = group_workaddress|profile2|main|form

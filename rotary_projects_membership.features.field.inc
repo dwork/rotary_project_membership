@@ -2198,8 +2198,8 @@ function rotary_projects_membership_field_default_fields() {
           'sort' => array(
             'direction' => 'ASC',
             'field' => 'field_date:value',
-            'property' => 'nid',
-            'type' => 'none',
+            'property' => 'title',
+            'type' => 'property',
           ),
           'target_bundles' => array(
             'chapter' => 'chapter',
@@ -2940,7 +2940,7 @@ function rotary_projects_membership_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );
