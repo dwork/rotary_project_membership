@@ -79,7 +79,7 @@ function rotary_projects_membership_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '0',
+    'weight' => '30',
   );
   // Exported menu link: main-menu:user/logout
   $menu_links['main-menu:user/logout'] = array(
@@ -103,7 +103,7 @@ function rotary_projects_membership_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '0',
+    'weight' => '30',
   );
   // Translatables
   // Included for use with string extractors like potx.

@@ -342,7 +342,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['sorts']['field_birthdate_value']['id'] = 'field_birthdate_value';
   $handler->display->display_options['sorts']['field_birthdate_value']['table'] = 'field_data_field_birthdate';
   $handler->display->display_options['sorts']['field_birthdate_value']['field'] = 'field_birthdate_value';
-  /* Contextual filter: Field: Chapter/Club (field_chapter) */
+  /* Contextual filter: Field: Club/Chapter (field_chapter) */
   $handler->display->display_options['arguments']['field_chapter_target_id']['id'] = 'field_chapter_target_id';
   $handler->display->display_options['arguments']['field_chapter_target_id']['table'] = 'field_data_field_chapter';
   $handler->display->display_options['arguments']['field_chapter_target_id']['field'] = 'field_chapter_target_id';
@@ -1679,7 +1679,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['sorts']['field_last_name_value']['id'] = 'field_last_name_value';
   $handler->display->display_options['sorts']['field_last_name_value']['table'] = 'field_data_field_last_name';
   $handler->display->display_options['sorts']['field_last_name_value']['field'] = 'field_last_name_value';
-  /* Contextual filter: Field: Chapter/Club (field_chapter) */
+  /* Contextual filter: Field: Club/Chapter (field_chapter) */
   $handler->display->display_options['arguments']['field_chapter_target_id']['id'] = 'field_chapter_target_id';
   $handler->display->display_options['arguments']['field_chapter_target_id']['table'] = 'field_data_field_chapter';
   $handler->display->display_options['arguments']['field_chapter_target_id']['field'] = 'field_chapter_target_id';
@@ -1935,7 +1935,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight']['relationship'] = 'field_officer_tid';
-  /* Contextual filter: Field: Chapter/Club (field_chapter) */
+  /* Contextual filter: Field: Club/Chapter (field_chapter) */
   $handler->display->display_options['arguments']['field_chapter_target_id']['id'] = 'field_chapter_target_id';
   $handler->display->display_options['arguments']['field_chapter_target_id']['table'] = 'field_data_field_chapter';
   $handler->display->display_options['arguments']['field_chapter_target_id']['field'] = 'field_chapter_target_id';

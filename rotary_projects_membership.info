@@ -118,6 +118,7 @@ features[node][] = chapter
 features[node][] = documentation
 features[node][] = location
 features[profile2_type][] = main
+features[rules_config][] = rules_up
 features[rules_config][] = rules_update_unassigned_club_chapter
 features[taxonomy][] = classification
 features[taxonomy][] = location
