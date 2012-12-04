@@ -105,12 +105,50 @@ function rotary_projects_membership_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '30',
   );
+  // Exported menu link: navigation:chapter
+  $menu_links['navigation:chapter'] = array(
+    'menu_name' => 'navigation',
+    'link_path' => 'chapter',
+    'router_path' => 'chapter',
+    'link_title' => 'Chapters',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Display chapters',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '0',
+  );
+  // Exported menu link: navigation:people
+  $menu_links['navigation:people'] = array(
+    'menu_name' => 'navigation',
+    'link_path' => 'people',
+    'router_path' => 'people',
+    'link_title' => 'Manage People',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Display list of People ',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '0',
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Birthdays');
+  t('Chapters');
   t('Home');
   t('Login');
   t('Logout');
+  t('Manage People');
   t('Members');
 
 

@@ -22,6 +22,12 @@ function rotary_projects_membership_user_default_roles() {
     'weight' => '3',
   );
 
+  // Exported role: Webmaster.
+  $roles['Webmaster'] = array(
+    'name' => 'Webmaster',
+    'weight' => '6',
+  );
+
   // Exported role: administrator.
   $roles['administrator'] = array(
     'name' => 'administrator',
