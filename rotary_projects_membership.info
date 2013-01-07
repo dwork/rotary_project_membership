@@ -265,7 +265,6 @@ features[views_view][] = documentation
 features[views_view][] = location
 features[views_view][] = map_to_home
 features[views_view][] = map_to_work
-features[views_view][] = members
 features[views_view][] = officers
 features[views_view][] = people
 features[views_view][] = phone_numbers
