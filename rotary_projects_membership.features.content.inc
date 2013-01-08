@@ -12,7 +12,7 @@ function rotary_projects_membership_content_defaults() {
 
   $content['default_chapter'] = (object) array(
     'exported_path' => 'content/default-rotary-club-name',
-    'title' => 'Default Rotary Club Name',
+    'title' => 'Default Club Name',
     'status' => '1',
     'promote' => '0',
     'sticky' => '0',
@@ -25,27 +25,13 @@ function rotary_projects_membership_content_defaults() {
     'body' => array(
       'und' => array(
         0 => array(
-          'value' => '<p>Your Rotary Club name and brief description here. This can contain charter date, philosophy, and so on. It isn&#39;t really referenced anywhere at this time.</p>
+          'value' => '<p>Your Club name and brief description here. This can contain charter date, philosophy, and so on. It isn&#39;t really referenced anywhere at this time.</p>
 ',
           'summary' => '',
           'format' => 'filtered_html',
-          'safe_value' => '<p>Your Rotary Club name and brief description here. This can contain charter date, philosophy, and so on. It isn\'t really referenced anywhere at this time.</p>
+          'safe_value' => '<p>Your Club name and brief description here. This can contain charter date, philosophy, and so on. It isn\'t really referenced anywhere at this time.</p>
 ',
           'safe_summary' => '',
-        ),
-      ),
-    ),
-    'field_mailing_address' => array(
-      'und' => array(
-        0 => array(
-          'target_id' => '164',
-        ),
-      ),
-    ),
-    'field_meeting_location' => array(
-      'und' => array(
-        0 => array(
-          'target_id' => '165',
         ),
       ),
     ),
