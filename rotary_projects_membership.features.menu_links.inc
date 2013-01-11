@@ -40,22 +40,7 @@ function rotary_projects_membership_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '0',
-    'parent_path' => 'members',
-  );
-  // Exported menu link: main-menu:members
-  $menu_links['main-menu:members'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'members',
-    'router_path' => 'members',
-    'link_title' => 'Members',
-    'options' => array(),
-    'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '1',
-    'expanded' => '0',
-    'weight' => '0',
+    'weight' => '-48',
   );
   // Exported menu link: main-menu:user/login
   $menu_links['main-menu:user/login'] = array(
@@ -92,7 +77,7 @@ function rotary_projects_membership_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '30',
+    'weight' => '-45',
   );
   // Exported menu link: main-menu:user/logout
   $menu_links['main-menu:user/logout'] = array(
@@ -102,26 +87,7 @@ function rotary_projects_membership_menu_default_menu_links() {
     'link_title' => 'Logout',
     'options' => array(
       'attributes' => array(
-        'title' => 'Display Logout',
-      ),
-      'menu_views' => array(
-        'mlid' => '1348',
-        'type' => 'link',
-        'original_path' => 'user/logout',
-        'view' => array(
-          'name' => FALSE,
-          'display' => FALSE,
-          'arguments' => '',
-          'settings' => array(
-            'breadcrumb' => TRUE,
-            'breadcrumb_title' => '',
-            'breadcrumb_path' => '<front>',
-            'title' => FALSE,
-            'title_wrapper' => '',
-            'title_classes' => '',
-            'title_override' => '',
-          ),
-        ),
+        'title' => '',
       ),
     ),
     'module' => 'menu',
@@ -129,7 +95,7 @@ function rotary_projects_membership_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '30',
+    'weight' => '0',
   );
   // Exported menu link: navigation:chapter
   $menu_links['navigation:chapter'] = array(
@@ -147,7 +113,7 @@ function rotary_projects_membership_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '0',
+    'weight' => '-45',
   );
   // Exported menu link: navigation:people
   $menu_links['navigation:people'] = array(
@@ -165,7 +131,7 @@ function rotary_projects_membership_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '0',
+    'weight' => '-41',
   );
   // Translatables
   // Included for use with string extractors like potx.
@@ -175,7 +141,6 @@ function rotary_projects_membership_menu_default_menu_links() {
   t('Login');
   t('Logout');
   t('Manage People');
-  t('Members');
 
 
   return $menu_links;

@@ -589,8 +589,7 @@ function rotary_projects_membership_user_default_permissions() {
     'name' => 'view field_chapter',
     'roles' => array(
       0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
+      1 => 'authenticated user',
     ),
     'module' => 'field_permissions',
   );
@@ -600,8 +599,7 @@ function rotary_projects_membership_user_default_permissions() {
     'name' => 'view own field_chapter',
     'roles' => array(
       0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
+      1 => 'authenticated user',
     ),
     'module' => 'field_permissions',
   );

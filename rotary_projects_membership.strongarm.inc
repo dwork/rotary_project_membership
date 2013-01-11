@@ -285,6 +285,7 @@ function rotary_projects_membership_strongarm() {
   $strongarm->name = 'node_options_chapter';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'promote',
   );
   $export['node_options_chapter'] = $strongarm;
 
@@ -340,7 +341,7 @@ function rotary_projects_membership_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_chapter';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['node_submitted_chapter'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -382,21 +383,21 @@ function rotary_projects_membership_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'smtp_from';
-  $strongarm->value = 'dwork@oip.net';
+  $strongarm->value = 'aegir@aegir.earthclick.net';
   $export['smtp_from'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'smtp_fromname';
-  $strongarm->value = 'Rotary';
+  $strongarm->value = 'Networking';
   $export['smtp_fromname'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'smtp_host';
-  $strongarm->value = 'smtp.oip.net';
+  $strongarm->value = 'smtp.earthclick.net';
   $export['smtp_host'] = $strongarm;
 
   $strongarm = new stdClass();

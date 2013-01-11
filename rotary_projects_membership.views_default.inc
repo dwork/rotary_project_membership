@@ -10,7 +10,7 @@
 function rotary_projects_membership_views_default_views() {
   $export = array();
 
-  $view = new view();
+  $view = new view;
   $view->name = 'birthdays';
   $view->description = 'Member birthday list, sorted by month/day and excluding year';
   $view->tag = 'default';
@@ -23,13 +23,13 @@ function rotary_projects_membership_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Birthdays';
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     2 => '2',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '30';
@@ -178,7 +178,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['sorts']['field_birthdate_value']['id'] = 'field_birthdate_value';
   $handler->display->display_options['sorts']['field_birthdate_value']['table'] = 'field_data_field_birthdate';
   $handler->display->display_options['sorts']['field_birthdate_value']['field'] = 'field_birthdate_value';
-  /* Contextual filter: Field: Club/Chapter (field_chapter) */
+  /* Contextual filter: Field: Chapter/Club (field_chapter) */
   $handler->display->display_options['arguments']['field_chapter_target_id']['id'] = 'field_chapter_target_id';
   $handler->display->display_options['arguments']['field_chapter_target_id']['table'] = 'field_data_field_chapter';
   $handler->display->display_options['arguments']['field_chapter_target_id']['field'] = 'field_chapter_target_id';
@@ -202,7 +202,6 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'birthdays';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Birthdays';
@@ -212,7 +211,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['menu']['context'] = 0;
   $export['birthdays'] = $view;
 
-  $view = new view();
+  $view = new view;
   $view->name = 'chapter';
   $view->description = 'Displays Chapter contact information from the Chapter node';
   $view->tag = 'default';
@@ -225,10 +224,10 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Chapter';
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '15';
@@ -266,7 +265,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['fields']['field_meeting_location']['settings'] = array(
     'link' => 0,
   );
-  /* Field: Field: Phone Number */
+  /* Field: Field: Phone */
   $handler->display->display_options['fields']['field_phone']['id'] = 'field_phone';
   $handler->display->display_options['fields']['field_phone']['table'] = 'field_data_field_phone';
   $handler->display->display_options['fields']['field_phone']['field'] = 'field_phone';
@@ -305,7 +304,6 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'chapter';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Chapters';
@@ -315,7 +313,6 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -326,7 +323,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Field: Club/Chapter (field_chapter) */
+  /* Contextual filter: Field: Chapter/Club (field_chapter) */
   $handler->display->display_options['arguments']['field_chapter_target_id']['id'] = 'field_chapter_target_id';
   $handler->display->display_options['arguments']['field_chapter_target_id']['table'] = 'field_data_field_chapter';
   $handler->display->display_options['arguments']['field_chapter_target_id']['field'] = 'field_chapter_target_id';
@@ -343,7 +340,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['block_description'] = 'View-Chapter (Block)';
   $export['chapter'] = $view;
 
-  $view = new view();
+  $view = new view;
   $view->name = 'documentation';
   $view->description = 'System Documentation';
   $view->tag = 'default';
@@ -356,18 +353,17 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Documentation';
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
-    10 => '10',
-    8 => '8',
     7 => '7',
+    4 => '4',
+    5 => '5',
     6 => '6',
-    9 => '9',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -402,13 +398,12 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'documentation';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Documentation';
   $export['documentation'] = $view;
 
-  $view = new view();
+  $view = new view;
   $view->name = 'location';
   $view->description = '';
   $view->tag = 'default';
@@ -421,10 +416,10 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Location';
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -465,14 +460,13 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'location';
 
   /* Display: Entity Reference View Widget */
   $handler = $view->new_display('entityreference_view_widget', 'Entity Reference View Widget', 'entityreference_view_widget_1');
   $export['location'] = $view;
 
-  $view = new view();
+  $view = new view;
   $view->name = 'map_to_home';
   $view->description = 'Map to Rotarian\'s home';
   $view->tag = 'default';
@@ -485,13 +479,13 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Map to Home';
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     2 => '2',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -621,12 +615,11 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['fields']['mail']['table'] = 'users';
   $handler->display->display_options['fields']['mail']['field'] = 'mail';
   $handler->display->display_options['fields']['mail']['exclude'] = TRUE;
-  /* Field: Field: Contact Info */
+  /* Field: Profile: Contact Phone */
   $handler->display->display_options['fields']['field_contact_phone']['id'] = 'field_contact_phone';
   $handler->display->display_options['fields']['field_contact_phone']['table'] = 'field_data_field_contact_phone';
   $handler->display->display_options['fields']['field_contact_phone']['field'] = 'field_contact_phone';
   $handler->display->display_options['fields']['field_contact_phone']['relationship'] = 'profile';
-  $handler->display->display_options['fields']['field_contact_phone']['label'] = 'Contact Phone';
   $handler->display->display_options['fields']['field_contact_phone']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_contact_phone']['type'] = 'field_collection_views_view';
   $handler->display->display_options['fields']['field_contact_phone']['settings'] = array(
@@ -690,11 +683,10 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'map-to-home';
   $export['map_to_home'] = $view;
 
-  $view = new view();
+  $view = new view;
   $view->name = 'map_to_work';
   $view->description = 'Map to Rotarian\'s home';
   $view->tag = 'default';
@@ -707,13 +699,13 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Map to Work';
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     2 => '2',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -843,12 +835,11 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
       'address' => 'address',
     ),
   );
-  /* Field: Field: Contact Info */
+  /* Field: Profile: Contact Phone */
   $handler->display->display_options['fields']['field_contact_phone']['id'] = 'field_contact_phone';
   $handler->display->display_options['fields']['field_contact_phone']['table'] = 'field_data_field_contact_phone';
   $handler->display->display_options['fields']['field_contact_phone']['field'] = 'field_contact_phone';
   $handler->display->display_options['fields']['field_contact_phone']['relationship'] = 'profile';
-  $handler->display->display_options['fields']['field_contact_phone']['label'] = 'Contact Phone';
   $handler->display->display_options['fields']['field_contact_phone']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_contact_phone']['type'] = 'field_collection_views_view';
   $handler->display->display_options['fields']['field_contact_phone']['settings'] = array(
@@ -912,11 +903,10 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'map-to-work';
   $export['map_to_work'] = $view;
 
-  $view = new view();
+  $view = new view;
   $view->name = 'officers';
   $view->description = 'Primary Club Officers';
   $view->tag = 'default';
@@ -929,10 +919,10 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Officers';
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -1003,7 +993,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight']['relationship'] = 'field_officer_tid';
-  /* Contextual filter: Field: Club/Chapter (field_chapter) */
+  /* Contextual filter: Field: Chapter/Club (field_chapter) */
   $handler->display->display_options['arguments']['field_chapter_target_id']['id'] = 'field_chapter_target_id';
   $handler->display->display_options['arguments']['field_chapter_target_id']['table'] = 'field_data_field_chapter';
   $handler->display->display_options['arguments']['field_chapter_target_id']['field'] = 'field_chapter_target_id';
@@ -1035,8 +1025,6 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -1049,14 +1037,13 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
 
   /* Display: Club Officers */
   $handler = $view->new_display('block', 'Club Officers', 'block');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['block_description'] = 'Club Officers';
   $export['officers'] = $view;
 
-  $view = new view();
+  $view = new view;
   $view->name = 'people';
   $view->description = 'Display and link to manage people if admin';
   $view->tag = 'default';
@@ -1069,11 +1056,11 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'People';
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access user profiles';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '30';
@@ -1184,7 +1171,6 @@ if ($user->uid <> 1) {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'people';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Manage People';
@@ -1193,7 +1179,7 @@ if ($user->uid <> 1) {
   $handler->display->display_options['menu']['context'] = 0;
   $export['people'] = $view;
 
-  $view = new view();
+  $view = new view;
   $view->name = 'phone_numbers';
   $view->description = 'This is the phone number view used by the Roster view. It displays the phone# and location/type in an easy-to-read format.';
   $view->tag = 'default';
@@ -1205,7 +1191,6 @@ if ($user->uid <> 1) {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -1254,14 +1239,14 @@ if ($user->uid <> 1) {
   $handler->display->display_options['fields']['host_entity_type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['host_entity_type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['host_entity_type']['hide_alter_empty'] = FALSE;
-  /* Field: Field: Phone Number */
+  /* Field: Field: Phone */
   $handler->display->display_options['fields']['field_phone']['id'] = 'field_phone';
   $handler->display->display_options['fields']['field_phone']['table'] = 'field_data_field_phone';
   $handler->display->display_options['fields']['field_phone']['field'] = 'field_phone';
   $handler->display->display_options['fields']['field_phone']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_phone']['click_sort_column'] = 'number';
   $handler->display->display_options['fields']['field_phone']['type'] = 'local_phone_number';
-  /* Field: Field collection item: Location */
+  /* Field: Field: Location */
   $handler->display->display_options['fields']['field_phone_location']['id'] = 'field_phone_location';
   $handler->display->display_options['fields']['field_phone_location']['table'] = 'field_data_field_phone_location';
   $handler->display->display_options['fields']['field_phone_location']['field'] = 'field_phone_location';
