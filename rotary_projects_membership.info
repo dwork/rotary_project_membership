@@ -57,7 +57,6 @@ features[content][] = default_mailinglocation
 features[content][] = default_meetinglocation
 features[content][] = doc_gettingstarted
 features[content][] = doc_taxonomy
-features[content][] = map icon
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
