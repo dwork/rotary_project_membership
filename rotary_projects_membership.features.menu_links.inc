@@ -24,24 +24,6 @@ function rotary_projects_membership_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-50',
   );
-  // Exported menu link: main-menu:birthdays
-  $menu_links['main-menu:birthdays'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'birthdays',
-    'router_path' => 'birthdays',
-    'link_title' => 'Birthdays',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Birthday List',
-      ),
-    ),
-    'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-48',
-  );
   // Exported menu link: main-menu:user/login
   $menu_links['main-menu:user/login'] = array(
     'menu_name' => 'main-menu',
@@ -135,7 +117,6 @@ function rotary_projects_membership_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Birthdays');
   t('Chapters');
   t('Home');
   t('Login');

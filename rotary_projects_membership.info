@@ -119,7 +119,6 @@ features[field_group][] = group_primary|user|user|form
 features[field_group][] = group_workaddress|profile2|main|form
 features[menu_custom][] = main-menu
 features[menu_links][] = main-menu:<front>
-features[menu_links][] = main-menu:birthdays
 features[menu_links][] = main-menu:user/login
 features[menu_links][] = main-menu:user/logout
 features[menu_links][] = navigation:chapter
