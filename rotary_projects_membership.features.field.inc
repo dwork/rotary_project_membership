@@ -2277,7 +2277,6 @@ function rotary_projects_membership_field_default_fields() {
       'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
-        'hide_blank_items' => TRUE,
         'path' => '',
         'profile2_private' => FALSE,
       ),
@@ -2852,7 +2851,7 @@ function rotary_projects_membership_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '0',
+        'weight' => 0,
       ),
     ),
   );

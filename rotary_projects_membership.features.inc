@@ -86,7 +86,6 @@ function rotary_projects_membership_default_profile2_type() {
     "label" : "Contact Info",
     "weight" : "0",
     "data" : { "registration" : 1, "use_page" : 0 },
-    "metatags" : [],
     "rdf_mapping" : []
   }');
   return $items;
