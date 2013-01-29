@@ -31,9 +31,7 @@ function rotary_projects_membership_user_default_permissions() {
   // Exported permission: access all views.
   $permissions['access all views'] = array(
     'name' => 'access all views',
-    'roles' => array(
-      0 => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'views',
   );
 
@@ -97,7 +95,11 @@ function rotary_projects_membership_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
-      0 => 'administrator',
+      0 => 'Attendance',
+      1 => 'Secretary',
+      2 => 'Treasurer',
+      3 => 'Webmaster',
+      4 => 'administrator',
     ),
     'module' => 'user',
   );
@@ -295,7 +297,11 @@ function rotary_projects_membership_user_default_permissions() {
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
-      0 => 'administrator',
+      0 => 'Attendance',
+      1 => 'Secretary',
+      2 => 'Treasurer',
+      3 => 'Webmaster',
+      4 => 'administrator',
     ),
     'module' => 'user',
   );
@@ -357,7 +363,11 @@ function rotary_projects_membership_user_default_permissions() {
   // Exported permission: create field_chapter.
   $permissions['create field_chapter'] = array(
     'name' => 'create field_chapter',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Secretary',
+      1 => 'Treasurer',
+      2 => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -427,14 +437,22 @@ function rotary_projects_membership_user_default_permissions() {
   // Exported permission: edit field_chapter.
   $permissions['edit field_chapter'] = array(
     'name' => 'edit field_chapter',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Secretary',
+      1 => 'Treasurer',
+      2 => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
   // Exported permission: edit own field_chapter.
   $permissions['edit own field_chapter'] = array(
     'name' => 'edit own field_chapter',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Secretary',
+      1 => 'Treasurer',
+      2 => 'administrator',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -589,7 +607,8 @@ function rotary_projects_membership_user_default_permissions() {
     'name' => 'view field_chapter',
     'roles' => array(
       0 => 'administrator',
-      1 => 'authenticated user',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
     ),
     'module' => 'field_permissions',
   );

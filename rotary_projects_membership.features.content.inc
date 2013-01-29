@@ -10,8 +10,39 @@
 function rotary_projects_membership_content_defaults() {
   $content = array();
 
+  $content['contact_us'] = (object) array(
+    'exported_path' => 'content/contact-us',
+    'title' => 'Contact Us',
+    'status' => '1',
+    'promote' => '0',
+    'sticky' => '0',
+    'type' => 'documentation',
+    'language' => 'und',
+    'created' => '1359042449',
+    'comment' => '0',
+    'translate' => '0',
+    'machine_name' => 'contact_us',
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<p><u><strong>Site-wide &quot;Contact Us&quot;</strong></u></p>
+<p>By default, there is a site-wide &quot;Contact Us&quot; form displayed on the main menu. It is possible to add multiple contact forms to the site covering a variety of situations. For example, you could have a site-wide Contact Us form, a &quot;Membership&quot; form, and a &quot;Project Form&quot;, all with different recipients and informational text.</p>
+<p>The basic form is defined using the &quot;Contact&quot; core module plus a &quot;Contact Us&quot; block.</p>
+',
+          'summary' => '',
+          'format' => 'filtered_html',
+          'safe_value' => '<p><strong>Site-wide "Contact Us"</strong><br />
+By default, there is a site-wide "Contact Us" form displayed on the main menu. It is possible to add multiple contact forms to the site covering a variety of situations. For example, you could have a site-wide Contact Us form, a "Membership" form, and a "Project Form", all with different recipients and informational text.<br />
+The basic form is defined using the "Contact" core module plus a "Contact Us" block.</p>
+',
+          'safe_summary' => '',
+        ),
+      ),
+    ),
+  );
+
   $content['default_chapter'] = (object) array(
-    'exported_path' => 'content/chapter-1',
+    'exported_path' => 'content/default-rotary-club-name',
     'title' => 'Chapter 1',
     'status' => '1',
     'promote' => '0',
@@ -35,21 +66,35 @@ function rotary_projects_membership_content_defaults() {
         ),
       ),
     ),
-    'field_meeting_frequency' => array(
-      'und' => array(
-        0 => array(
-          'value' => '--meeting frequency here--',
-          'format' => NULL,
-          'safe_value' => '--meeting frequency here--',
-        ),
-      ),
-    ),
     'field_id_number' => array(
       'und' => array(
         0 => array(
-          'value' => '123123123',
+          'value' => '1',
           'format' => NULL,
-          'safe_value' => '123123123',
+          'safe_value' => '1',
+        ),
+      ),
+    ),
+    'field_mailing_address' => array(
+      'und' => array(
+        0 => array(
+          'target_id' => '4',
+        ),
+      ),
+    ),
+    'field_meeting_frequency' => array(
+      'und' => array(
+        0 => array(
+          'value' => 'Wednesday 11:30am to 1:00pm',
+          'format' => NULL,
+          'safe_value' => 'Wednesday 11:30am to 1:00pm',
+        ),
+      ),
+    ),
+    'field_meeting_location' => array(
+      'und' => array(
+        0 => array(
+          'target_id' => '183',
         ),
       ),
     ),
@@ -164,6 +209,15 @@ function rotary_projects_membership_content_defaults() {
         ),
       ),
     ),
+    'field_directions' => array(
+      'und' => array(
+        0 => array(
+          'value' => 'Drive left, right and ahead until you get there.',
+          'format' => NULL,
+          'safe_value' => 'Drive left, right and ahead until you get there.',
+        ),
+      ),
+    ),
     'field_map' => array(
       'und' => array(
         0 => array(
@@ -181,19 +235,10 @@ function rotary_projects_membership_content_defaults() {
         ),
       ),
     ),
-    'field_directions' => array(
-      'und' => array(
-        0 => array(
-          'value' => 'Drive left, right and ahead until you get there.',
-          'format' => NULL,
-          'safe_value' => 'Drive left, right and ahead until you get there.',
-        ),
-      ),
-    ),
   );
 
   $content['doc_gettingstarted'] = (object) array(
-    'exported_path' => 'help/documents/getting-started',
+    'exported_path' => 'content/getting-started',
     'title' => 'Getting Started',
     'status' => '1',
     'promote' => '1',
@@ -310,7 +355,7 @@ The "Administrative Menu" is located at the top of your screen. Click on the app
   );
 
   $content['doc_taxonomy'] = (object) array(
-    'exported_path' => 'help/documents/taxonomy-term-maintenance',
+    'exported_path' => 'content/taxonomy-term-maintenance',
     'title' => 'Taxonomy Term Maintenance',
     'status' => '1',
     'promote' => '0',
@@ -339,7 +384,7 @@ Taxonomies may have additional fields. For example, "Officers" has an extra fiel
   );
 
   $content['map icon'] = (object) array(
-    'exported_path' => 'photos/albums/map-icon',
+    'exported_path' => 'content/map-icon',
     'title' => 'Map Icon',
     'status' => '1',
     'promote' => '0',
@@ -353,11 +398,12 @@ Taxonomies may have additional fields. For example, "Officers" has an extra fiel
     'body' => array(
       'und' => array(
         0 => array(
-          'value' => '<p>Map icon</p>
+          'value' => '<p>Map icon: file/Google_Maps_Marker.png ... 37x34 pixels</p>
+<p><a href="http://network.pdss.com/sites/network.pdss.com/files/Google_Maps_Marker.png">Google_Maps_Marker.png</a></p>
 ',
           'summary' => '',
           'format' => 'filtered_html',
-          'safe_value' => '<p>Map icon</p>
+          'safe_value' => '<p>Map icon: file/Google_Maps_Marker.png ... 37x34 pixels<br /><a href="http://network.pdss.com/sites/network.pdss.com/files/Google_Maps_Marker.png">Google_Maps_Marker.png</a></p>
 ',
           'safe_summary' => '',
         ),
@@ -376,6 +422,7 @@ Taxonomies may have additional fields. For example, "Officers" has an extra fiel
           'filesize' => '2237',
           'status' => '1',
           'type' => 'image',
+          'metatags' => array(),
           'rdf_mapping' => array(),
           'image' => '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',
         ),

@@ -41,6 +41,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'local_phone_number',
           'weight' => '0',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_phone',
@@ -351,6 +357,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => '1',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_phone_location',
@@ -417,6 +429,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => '2',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_phone_type',
@@ -474,6 +492,12 @@ function rotary_projects_membership_field_default_fields() {
           ),
           'type' => 'number_integer',
           'weight' => 3,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -543,6 +567,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => '0',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -638,6 +668,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'entityreference_label',
           'weight' => '11',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -666,7 +702,7 @@ function rotary_projects_membership_field_default_fields() {
   $fields['node-article-field_chapter'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_chapter',
@@ -727,6 +763,12 @@ function rotary_projects_membership_field_default_fields() {
           ),
           'type' => 'entityreference_label',
           'weight' => 13,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -799,6 +841,12 @@ function rotary_projects_membership_field_default_fields() {
           ),
           'type' => 'image',
           'weight' => '-1',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -886,6 +934,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => '10',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'module' => 'taxonomy',
@@ -959,6 +1013,12 @@ function rotary_projects_membership_field_default_fields() {
           ),
           'type' => 'file_rendered',
           'weight' => '12',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1048,6 +1108,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'text_default',
           'weight' => 0,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -1121,6 +1187,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => 5,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1212,6 +1284,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'entityreference_label',
           'weight' => 1,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1278,6 +1356,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => 4,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1369,6 +1453,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'entityreference_label',
           'weight' => 2,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1427,6 +1517,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'global_phone_number',
           'weight' => 6,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1743,6 +1839,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'text_default',
           'weight' => 0,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -1821,6 +1923,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'text_default',
           'weight' => '0',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -1898,6 +2006,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'addressfield_default',
           'weight' => '1',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1974,6 +2088,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'text_default',
           'weight' => 3,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2048,6 +2168,12 @@ function rotary_projects_membership_field_default_fields() {
           ),
           'type' => 'geofield_map_map',
           'weight' => '2',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2141,6 +2267,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'text_default',
           'weight' => 0,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -2176,7 +2308,7 @@ function rotary_projects_membership_field_default_fields() {
   $fields['node-page-field_chapter'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_chapter',
@@ -2238,6 +2370,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'entityreference_label',
           'weight' => 1,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2277,6 +2415,7 @@ function rotary_projects_membership_field_default_fields() {
       'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
+        'hide_blank_items' => TRUE,
         'path' => '',
         'profile2_private' => FALSE,
       ),
@@ -2299,6 +2438,12 @@ function rotary_projects_membership_field_default_fields() {
           ),
           'type' => 'field_collection_views_view',
           'weight' => '10',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'profile2',
@@ -2365,6 +2510,12 @@ function rotary_projects_membership_field_default_fields() {
           ),
           'type' => 'geofield_map_map',
           'weight' => '13',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'profile2',
@@ -2451,6 +2602,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'addressfield_default',
           'weight' => '12',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'profile2',
       'field_name' => 'field_postal_address',
@@ -2524,6 +2681,12 @@ function rotary_projects_membership_field_default_fields() {
           ),
           'type' => 'addressfield_default',
           'weight' => '14',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'profile2',
@@ -2600,6 +2763,12 @@ function rotary_projects_membership_field_default_fields() {
           ),
           'type' => 'geofield_map_map',
           'weight' => '15',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'profile2',
@@ -2679,6 +2848,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'list_default',
           'weight' => 0,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'taxonomy_term',
       'field_name' => 'field_primary_officer',
@@ -2705,6 +2880,9 @@ function rotary_projects_membership_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_birthdate',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -2741,13 +2919,19 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'date_plain',
           'weight' => '1',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_birthdate',
       'label' => 'Birthdate',
       'required' => 0,
       'settings' => array(
-        'default_value' => 'now',
+        'default_value' => 'blank',
         'default_value2' => 'same',
         'default_value_code' => '',
         'default_value_code2' => '',
@@ -2757,7 +2941,6 @@ function rotary_projects_membership_field_default_fields() {
         'active' => 1,
         'module' => 'date',
         'settings' => array(
-          'display_all_day' => 0,
           'increment' => '15',
           'input_format' => 'm/d/Y - H:i:s',
           'input_format_custom' => '',
@@ -2772,11 +2955,86 @@ function rotary_projects_membership_field_default_fields() {
     ),
   );
 
+  // Exported field: 'user-user-field_board_member'.
+  $fields['user-user-field_board_member'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_board_member',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'board',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'user',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Board Member. This may differ from Club Officers.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 27,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'user',
+      'field_name' => 'field_board_member',
+      'label' => 'Board Member',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => 1,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '6',
+      ),
+    ),
+  );
+
   // Exported field: 'user-user-field_chapter'.
   $fields['user-user-field_chapter'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_chapter',
@@ -2838,8 +3096,16 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'entityreference_label',
           'weight' => 10,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
+      'entityconnect_unload_add' => '0',
+      'entityconnect_unload_edit' => '0',
       'field_name' => 'field_chapter',
       'label' => 'Chapter/Club',
       'required' => 1,
@@ -2907,6 +3173,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 16,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_classification',
@@ -2924,63 +3196,6 @@ function rotary_projects_membership_field_default_fields() {
         ),
         'type' => 'taxonomy_autocomplete',
         'weight' => '1',
-      ),
-    ),
-  );
-
-  // Exported field: 'user-user-field_deceased'.
-  $fields['user-user-field_deceased'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_deceased',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          'Yes' => 'Yes',
-        ),
-        'allowed_values_function' => '',
-        'profile2_private' => FALSE,
-      ),
-      'translatable' => '0',
-      'type' => 'list_text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'user',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '4',
-        ),
-      ),
-      'entity_type' => 'user',
-      'field_name' => 'field_deceased',
-      'label' => 'Deceased',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => 0,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => '44',
       ),
     ),
   );
@@ -3030,6 +3245,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => '5',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'user',
@@ -3098,6 +3319,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'text_default',
           'weight' => 11,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_first_name',
@@ -3127,6 +3354,9 @@ function rotary_projects_membership_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_gender',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -3159,11 +3389,17 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'list_default',
           'weight' => '3',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_gender',
       'label' => 'Gender',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => 1,
       ),
@@ -3219,6 +3455,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => '6',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'user',
@@ -3287,6 +3529,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'text_default',
           'weight' => 13,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_last_name',
@@ -3350,6 +3598,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => 18,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'user',
@@ -3420,6 +3674,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 14,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_member_title',
@@ -3480,6 +3740,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => 12,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'user',
@@ -3550,6 +3816,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 24,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_officer',
@@ -3564,6 +3836,77 @@ function rotary_projects_membership_field_default_fields() {
         'settings' => array(),
         'type' => 'options_select',
         'weight' => '5',
+      ),
+    ),
+  );
+
+  // Exported field: 'user-user-field_phone_location'.
+  $fields['user-user-field_phone_location'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_phone_location',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'location',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'user',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 26,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'user',
+      'field_name' => 'field_phone_location',
+      'label' => 'Location',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '47',
       ),
     ),
   );
@@ -3606,6 +3949,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'list_default',
           'weight' => '7',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'user',
@@ -3667,6 +4016,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => 19,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'user',
@@ -3730,6 +4085,12 @@ function rotary_projects_membership_field_default_fields() {
           'settings' => array(),
           'type' => 'text_default',
           'weight' => '8',
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'user',
@@ -3803,6 +4164,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 17,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_status',
@@ -3864,6 +4231,12 @@ function rotary_projects_membership_field_default_fields() {
           'type' => 'text_default',
           'weight' => 15,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_suffix',
@@ -3885,19 +4258,107 @@ function rotary_projects_membership_field_default_fields() {
     ),
   );
 
+  // Exported field: 'user-user-field_website'.
+  $fields['user-user-field_website'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_website',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'profile2_private' => FALSE,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'user',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Full website address (e.g. http://www.mydomain.com)',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => 25,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'user',
+      'field_name' => 'field_website',
+      'label' => 'Website',
+      'required' => 0,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'default',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => '128',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => 1,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_field',
+        'weight' => '46',
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
   t('Affiliation and/or ID#; for example, "Rotary International# 123456"');
   t('Album');
   t('Birthdate');
+  t('Board Member');
+  t('Board Member. This may differ from Club Officers.');
   t('Body');
   t('Chapter/Club');
   t('Chapter/Club this member belongs to');
   t('Classification');
   t('Club/Chapter');
   t('Contact Phone');
-  t('Deceased');
   t('Describe the frequency of your meetings: Regular, Infrequently, every Wednesday, First and Third Fridays, once a month, etc.');
   t('Directions');
   t('Driving directions to this location');
@@ -3906,6 +4367,7 @@ function rotary_projects_membership_field_default_fields() {
   t('Enter the postal address for this location.');
   t('Enter your classification/occupation in this field');
   t('First Name');
+  t('Full website address (e.g. http://www.mydomain.com)');
   t('Gender');
   t('Geocoded map for this location');
   t('Home Address');
@@ -3948,6 +4410,7 @@ function rotary_projects_membership_field_default_fields() {
   t('This is the chapter/club\'s regular meeting location');
   t('Title');
   t('Upload an image to go with this article.');
+  t('Website');
   t('Weight');
   t('Work Address');
   t('Work Map');

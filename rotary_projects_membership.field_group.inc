@@ -25,10 +25,11 @@ function rotary_projects_membership_field_group_info() {
     'children' => array(
       0 => 'field_chapter',
       1 => 'field_classification',
-      2 => 'field_status',
-      3 => 'field_member_id',
+      2 => 'field_member_id',
+      3 => 'field_officer',
       4 => 'field_sponsor',
-      5 => 'field_officer',
+      5 => 'field_status',
+      6 => 'field_board_member',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -57,8 +58,7 @@ function rotary_projects_membership_field_group_info() {
     'children' => array(
       0 => 'field_birthdate',
       1 => 'field_gender',
-      2 => 'field_deceased',
-      3 => 'field_spouse_sig_oth',
+      2 => 'field_spouse_sig_oth',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -143,9 +143,9 @@ function rotary_projects_membership_field_group_info() {
     'weight' => '4',
     'children' => array(
       0 => 'field_first_name',
-      1 => 'field_middle_initial',
-      2 => 'field_last_name',
-      3 => 'field_member_title',
+      1 => 'field_last_name',
+      2 => 'field_member_title',
+      3 => 'field_middle_initial',
       4 => 'field_suffix',
     ),
     'format_type' => 'fieldset',
