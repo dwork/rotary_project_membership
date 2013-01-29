@@ -274,7 +274,6 @@ features[views_view][] = location
 features[views_view][] = map_to_home
 features[views_view][] = map_to_location
 features[views_view][] = map_to_work
-features[views_view][] = officers
 features[views_view][] = people
 features[views_view][] = phone_numbers
 project status url = http://e-classiccar.com/fserver
