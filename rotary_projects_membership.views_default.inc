@@ -375,7 +375,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['fields']['php']['id'] = 'php';
   $handler->display->display_options['fields']['php']['table'] = 'views';
   $handler->display->display_options['fields']['php']['field'] = 'php';
-  $handler->display->display_options['fields']['php']['label'] = 'Current';
+  $handler->display->display_options['fields']['php']['label'] = 'Current (excluded)';
   $handler->display->display_options['fields']['php']['exclude'] = TRUE;
   $handler->display->display_options['fields']['php']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['php']['alter']['make_link'] = 0;
@@ -409,6 +409,7 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Meeting Location';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_meeting_frequency]<BR>
 [field_meeting_location]<BR>
 [field_address]<BR>
@@ -560,15 +561,41 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Location';
-  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_address' => 'field_address',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_address' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  $handler->display->display_options['style_options']['override'] = 1;
+  $handler->display->display_options['style_options']['sticky'] = 0;
+  $handler->display->display_options['style_options']['empty_table'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -576,6 +603,108 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Address */
+  $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
+  $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
+  $handler->display->display_options['fields']['field_address']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_address']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_address']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_address']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_address']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_address']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_address']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_address']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_address']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_address']['click_sort_column'] = 'country';
+  $handler->display->display_options['fields']['field_address']['settings'] = array(
+    'use_widget_handlers' => 1,
+    'format_handlers' => array(
+      'address' => 'address',
+    ),
+  );
+  $handler->display->display_options['fields']['field_address']['field_api_classes'] = 0;
+  /* Field: NID (hidden) */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['ui_name'] = 'NID (hidden)';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['nid']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['nid']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['nid']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['nid']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['nid']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['nid']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['nid']['link_to_node'] = 0;
+  /* Field: Content: Map */
+  $handler->display->display_options['fields']['field_map']['id'] = 'field_map';
+  $handler->display->display_options['fields']['field_map']['table'] = 'field_data_field_map';
+  $handler->display->display_options['fields']['field_map']['field'] = 'field_map';
+  $handler->display->display_options['fields']['field_map']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['field_map']['alter']['text'] = 'MAP';
+  $handler->display->display_options['fields']['field_map']['alter']['make_link'] = 1;
+  $handler->display->display_options['fields']['field_map']['alter']['path'] = 'map-to-location/[nid]';
+  $handler->display->display_options['fields']['field_map']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_map']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_map']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_map']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_map']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_map']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_map']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_map']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_map']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_map']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_map']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_map']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_map']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_map']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_map']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_map']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_map']['click_sort_column'] = 'wkt';
+  $handler->display->display_options['fields']['field_map']['type'] = 'geofield_map_map';
+  $handler->display->display_options['fields']['field_map']['settings'] = array(
+    'geofield_map_width' => '100%',
+    'geofield_map_height' => '300px',
+    'geofield_map_zoom' => '8',
+    'geofield_map_controltype' => 'default',
+    'geofield_map_mtc' => 'standard',
+    'geofield_map_pancontrol' => 1,
+    'geofield_map_maptype' => 'map',
+    'geofield_map_baselayers_map' => 1,
+    'geofield_map_baselayers_satellite' => 1,
+    'geofield_map_baselayers_hybrid' => 1,
+    'geofield_map_baselayers_physical' => 0,
+    'geofield_map_scale' => 0,
+    'geofield_map_overview' => 0,
+    'geofield_map_overview_opened' => 0,
+    'geofield_map_scrollwheel' => 0,
+    'geofield_map_draggable' => 0,
+    'geofield_map_streetview_show' => 0,
+  );
+  $handler->display->display_options['fields']['field_map']['field_api_classes'] = 0;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -595,16 +724,15 @@ print substr($data->field_field_birthdate[0][\'raw\'][\'value\'],5,2);
   $handler->display->display_options['filters']['type']['value'] = array(
     'location' => 'location',
   );
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title']['value'] = '790';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'location';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Locations';
+  $handler->display->display_options['menu']['description'] = 'Meeting and Project locations';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['context'] = 0;
 
   /* Display: Entity Reference View Widget */
   $handler = $view->new_display('entityreference_view_widget', 'Entity Reference View Widget', 'entityreference_view_widget_1');

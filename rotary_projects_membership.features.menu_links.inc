@@ -133,6 +133,24 @@ function rotary_projects_membership_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-46',
   );
+  // Exported menu link: navigation:location
+  $menu_links['navigation:location'] = array(
+    'menu_name' => 'navigation',
+    'link_path' => 'location',
+    'router_path' => 'location',
+    'link_title' => 'Locations',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Meeting and Project locations',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '0',
+  );
   // Exported menu link: navigation:people
   $menu_links['navigation:people'] = array(
     'menu_name' => 'navigation',
@@ -157,6 +175,7 @@ function rotary_projects_membership_menu_default_menu_links() {
   t('Chapters');
   t('Contact Us');
   t('Home');
+  t('Locations');
   t('Login');
   t('Logout');
   t('Manage People');
