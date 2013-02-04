@@ -237,6 +237,151 @@ The basic form is defined using the "Contact" core module plus a "Contact Us" bl
     ),
   );
 
+  $content['doc_add_chapter'] = (object) array(
+    'exported_path' => 'content/add-new-chapter',
+    'title' => 'Add a new Chapter',
+    'status' => '1',
+    'promote' => '0',
+    'sticky' => '0',
+    'type' => 'documentation',
+    'language' => 'und',
+    'created' => '1359910612',
+    'comment' => '0',
+    'translate' => '0',
+    'machine_name' => 'doc_add_chapter',
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<p>Follow these steps to add a new chapter:</p>
+<ol>
+	<li>
+		Review the <strong><em><u>Locations</u></em></strong>&nbsp;to see if the chapter&#39;s meeting address or mailing address are already defined. If not, you should add it/them first<br />
+		- Under <strong><em><u>Navigation</u></em></strong>, click &quot;Add Content &gt;&gt; Location&quot;<br />
+		- Title: the name of the meeting place (e.g. &quot;Joes Restaurant&quot;)<br />
+		- Address: enter the address, city, state and zip code. These are used to generate a location map<br />
+		- Directions: enter driving directions<br />
+		- click &quot;SAVE&quot;<br />
+		&nbsp;</li>
+	<li>
+		<p>Add the chapter&#39;s &quot;Chapter&quot; record<br />
+			-&nbsp;Under&nbsp;<strong><em><u>Navigation</u></em></strong>, click &quot;Add Content &gt;&gt; Chapter&quot;<br />
+			- Title: the name of the chapter (e.g. &quot;Morning Cub&quot;)<br />
+			- ID Number: if the chapter has an ID number, enter it. You can leave this field blank - its internal documentation<br />
+			- Mailing Address and Meeting Address: select the addresses for this chapter<br />
+			- Meeting Frequency: enter the chapter&#39;s meeting day, time and frequency. This is a free-form description. Examples: &quot;1st and 3rd Fridays at 8am&quot;; &quot;Tuesday 11:30am to 1:00pm&quot;.<br />
+			- Phone: If your chapter has a phone# or message phone#, enter it here. You can leave this field blank.<br />
+			- click &quot;SAVE&quot;<br />
+			<br />
+			<strong>NOTE ABOUT ATTENDANCE POLICY AND DUES POLICY:</strong>&nbsp;<br />
+			<em>If you are setting up a true multi-chapter organization, attendance and dues policies per se are likely to be identical. The reason our system provides independent policies is to allow each chapter to have its own individualized email settings -- email addresses and messages&nbsp;</em></p>
+	</li>
+	<li>
+		Create an Attendance Policy if this module is installed<br />
+		RECOMMENDED (assumes at least one Policy has been set up and is accurate)<br />
+		-&nbsp;Under <strong><em><u>Attendance</u></em></strong>, click &quot;Attendance Policies&quot; to display a list of existing policies<br />
+		- Copy an existing Attendance Policy by click on &quot;Clone&quot;<br />
+		&nbsp; &nbsp;This will copy the selected policy can change the title to &quot;Copy of ...&quot;. Modify all appropriate fields.&nbsp;<br />
+		- Change the title and other fields as necessary<br />
+		- click &quot;SAVE&quot;<br />
+		<br />
+		NOT RECOMMENDED:<br />
+		-&nbsp;Under&nbsp;<strong><em><u>Navigation</u></em></strong>, click &quot;Add Content &gt;&gt; Attendancy Policy&quot;<br />
+		- Enter the title and other fields as required by your policy<br />
+		- click &quot;SAVE&quot;<br />
+		&nbsp;</li>
+	<li>
+		Create an Dues Policy if this module is installed<br />
+		RECOMMENDED (assumes at least one Policy has been set up and is accurate)<br />
+		-&nbsp;Under <b><i><u>Dues</u></i></b>, click &quot;Dues Policies&quot; to display a list of existing policies<br />
+		- Copy an existing Dues Policy by click on &quot;Clone&quot;<br />
+		&nbsp; &nbsp;This will copy the selected policy can change the title to &quot;Copy of ...&quot;. Modify all appropriate fields.&nbsp;<br />
+		- Change the title and other fields as necessary<br />
+		- click &quot;SAVE&quot;<br />
+		<br />
+		NOT RECOMMENDED:<br />
+		-&nbsp;Under&nbsp;<strong><em><u>Navigation</u></em></strong>, click &quot;Add Content &gt;&gt; Dues Policy&quot;<br />
+		- Enter the title and other fields as required by your policy<br />
+		- click &quot;SAVE&quot;<br />
+		&nbsp;</li>
+	<li>
+		Add at least one chapter member with an &quot;Administrator&quot; role to all that person to maintain chapter information.<br />
+		-&nbsp;Under&nbsp;<strong><em><u>Navigation</u></em></strong>, click &quot;Manage People&quot;<br />
+		- click &quot;+ Add User&quot; &nbsp;(we use &quot;User&quot; instead of &quot;Member&quot; because &quot;users&quot; may have other functions in your chapter than a &quot;user&quot; of this website.<br />
+		- Username: Enter the name of the user/member. RECOMMENDED: use the user&#39;s full name (e.g. &quot;John Doe&quot; or &quot;Mary Smith&quot;. The system allows searches on Username, so cryptic Usernames hide them from administrative or public searches.<br />
+		- Enter the user&#39;s email address, password and select &quot;Administrator&quot; as the role. Other roles may be selected as well.<br />
+		- If you check &quot;notify user of new account&quot;, an email will be sent to the user with login instructions.<br />
+		- Fill out all the other fields. Fields with an asterisk are required. All fields can be edited or changed later.<br />
+		<br />
+		<strong><em>Classification: Enter the classification or business category for this member. If this user is NOT a member, you can enter &quot;None&quot;.&nbsp;</em></strong><br />
+		<strong><em>Status: If this user is NOT a member, you can select &quot;None&quot; or make no selection</em></strong><br />
+		&nbsp;</li>
+</ol>
+',
+          'summary' => '',
+          'format' => 'filtered_html',
+          'safe_value' => '<p>Follow these steps to add a new chapter:</p>
+<ol><li>
+		Review the <strong><em>Locations</em></strong> to see if the chapter\'s meeting address or mailing address are already defined. If not, you should add it/them first<br />
+		- Under <strong><em>Navigation</em></strong>, click "Add Content &gt;&gt; Location"<br />
+		- Title: the name of the meeting place (e.g. "Joes Restaurant")<br />
+		- Address: enter the address, city, state and zip code. These are used to generate a location map<br />
+		- Directions: enter driving directions<br />
+		- click "SAVE"<br />
+		 </li>
+<li>
+		Add the chapter\'s "Chapter" record<br />
+			- Under <strong><em>Navigation</em></strong>, click "Add Content &gt;&gt; Chapter"<br />
+			- Title: the name of the chapter (e.g. "Morning Cub")<br />
+			- ID Number: if the chapter has an ID number, enter it. You can leave this field blank - its internal documentation<br />
+			- Mailing Address and Meeting Address: select the addresses for this chapter<br />
+			- Meeting Frequency: enter the chapter\'s meeting day, time and frequency. This is a free-form description. Examples: "1st and 3rd Fridays at 8am"; "Tuesday 11:30am to 1:00pm".<br />
+			- Phone: If your chapter has a phone# or message phone#, enter it here. You can leave this field blank.<br />
+			- click "SAVE"
+<p>			<strong>NOTE ABOUT ATTENDANCE POLICY AND DUES POLICY:</strong> <br /><em>If you are setting up a true multi-chapter organization, attendance and dues policies per se are likely to be identical. The reason our system provides independent policies is to allow each chapter to have its own individualized email settings -- email addresses and messages </em>
+	</p></li>
+<li>
+		Create an Attendance Policy if this module is installed<br />
+		RECOMMENDED (assumes at least one Policy has been set up and is accurate)<br />
+		- Under <strong><em>Attendance</em></strong>, click "Attendance Policies" to display a list of existing policies<br />
+		- Copy an existing Attendance Policy by click on "Clone"<br />
+		   This will copy the selected policy can change the title to "Copy of ...". Modify all appropriate fields. <br />
+		- Change the title and other fields as necessary<br />
+		- click "SAVE"
+<p>		NOT RECOMMENDED:<br />
+		- Under <strong><em>Navigation</em></strong>, click "Add Content &gt;&gt; Attendancy Policy"<br />
+		- Enter the title and other fields as required by your policy<br />
+		- click "SAVE"<br />
+		 </p></li>
+<li>
+		Create an Dues Policy if this module is installed<br />
+		RECOMMENDED (assumes at least one Policy has been set up and is accurate)<br />
+		- Under Dues, click "Dues Policies" to display a list of existing policies<br />
+		- Copy an existing Dues Policy by click on "Clone"<br />
+		   This will copy the selected policy can change the title to "Copy of ...". Modify all appropriate fields. <br />
+		- Change the title and other fields as necessary<br />
+		- click "SAVE"
+<p>		NOT RECOMMENDED:<br />
+		- Under <strong><em>Navigation</em></strong>, click "Add Content &gt;&gt; Dues Policy"<br />
+		- Enter the title and other fields as required by your policy<br />
+		- click "SAVE"<br />
+		 </p></li>
+<li>
+		Add at least one chapter member with an "Administrator" role to all that person to maintain chapter information.<br />
+		- Under <strong><em>Navigation</em></strong>, click "Manage People"<br />
+		- click "+ Add User"  (we use "User" instead of "Member" because "users" may have other functions in your chapter than a "user" of this website.<br />
+		- Username: Enter the name of the user/member. RECOMMENDED: use the user\'s full name (e.g. "John Doe" or "Mary Smith". The system allows searches on Username, so cryptic Usernames hide them from administrative or public searches.<br />
+		- Enter the user\'s email address, password and select "Administrator" as the role. Other roles may be selected as well.<br />
+		- If you check "notify user of new account", an email will be sent to the user with login instructions.<br />
+		- Fill out all the other fields. Fields with an asterisk are required. All fields can be edited or changed later.
+<p>		<strong><em>Classification: Enter the classification or business category for this member. If this user is NOT a member, you can enter "None". </em></strong><br /><strong><em>Status: If this user is NOT a member, you can select "None" or make no selection</em></strong><br />
+		 </p></li>
+</ol>',
+          'safe_summary' => '',
+        ),
+      ),
+    ),
+  );
+
   $content['doc_gettingstarted'] = (object) array(
     'exported_path' => 'content/getting-started',
     'title' => 'Getting Started',

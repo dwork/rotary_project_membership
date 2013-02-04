@@ -58,6 +58,7 @@ features[content][] = contact_us
 features[content][] = default_chapter
 features[content][] = default_mailinglocation
 features[content][] = default_meetinglocation
+features[content][] = doc_add_chapter
 features[content][] = doc_gettingstarted
 features[content][] = doc_taxonomy
 features[content][] = map icon
